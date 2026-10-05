@@ -1,0 +1,47 @@
+# Author details confirmed; publication identifiers await editorial assignment.
+# ORCID null: author confirmed having no ORCID.
+title: "A Distributional Audit of a Public Julia Comparison Artifact for Weighted Reservoir Sampling with Replacement"
+authors:
+  - name: Mohammad Haribat
+    orcid: null
+    email: mharibat@mew.gov.kw
+    affiliations: "1,*"
+affiliations:
+  - code: 1
+    name: Independent Researcher
+    address: Kuwait
+keywords: weighted reservoir sampling, replication, distributional testing, Julia
+code:
+  - url: https://github.com/mharinat/weighted-reservoir-distributional-audit/blob/main/Research_Artifact.zip
+  - doi: null
+  - swh: null
+data:
+  - url: https://github.com/mharinat/weighted-reservoir-distributional-audit/blob/main/Research_Artifact.zip
+  - doi: null
+replication:
+  - cite: 'A. Meligrana and A. Fazzone, Weighted Reservoir Sampling with Replacement from Data Streams, WWW 2026, pp. 8789–8792.'
+  - bib: meligrana2026
+  - url: https://arxiv.org/pdf/2403.20256v7
+  - doi: 10.1145/3774904.3792966
+abstract: "A correct sampling construction does not ensure that its implementation follows the target distribution. We examine a public Julia comparison artifact for weighted reservoir sampling with replacement using an independent implementation, exact enumeration and native execution. The audit identifies defects in distinct-item tracking during conversion and in a binomial-count recurrence. The conversion failure path requires at least four outputs: with four equally weighted items and four draws, the original routine assigns probability $10/64$ to two pairs instead of $9/64$. A conditional-rank argument justifies the conversion repair, supported by 19 exact weighted checks. The corrected count shortcut matches its analytical law in 296 rational parameter combinations. Across twelve configurations, 60,000 fresh reservoirs quantify conversion effects at four sample fractions and three weight profiles. Paired normalized-mean differences are detected at 10% and 20% fractions for increasing and decreasing weights, with opposite signs. At 20%, the differences are 0.000968 and −0.000984; simultaneous family intervals exclude zero. Uniform-weight mean contrasts do not reject despite the distributional counterexample. Reanalysis of 2,880 timing records retains the observed SKIP ranking but leaves speedup magnitude uncertain. Selected outputs reproduce byte-for-byte after dependency installation on the same host. The results establish two defects in the comparison artifact and quantify their measured consequences. They neither certify general floating-point correctness nor reconstruct the historical environment used for the published experiments."
+bibliography: bibliography.bib
+# Provisional type: partial replication with source-informed audit.
+type: Replication
+domain: Computer Science
+language: Julia
+review:
+  - url: null
+contributors: []
+dates:
+  - received: null
+  - accepted: null
+  - published: null
+article:
+  - number: null
+  - doi: null
+  - url: null
+journal:
+  - name: ReScience C
+  - issn: 2430-3658
+  - volume: null
+  - issue: null
