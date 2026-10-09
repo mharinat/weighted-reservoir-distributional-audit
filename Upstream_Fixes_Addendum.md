@@ -1,8 +1,14 @@
 # Post-submission verification of upstream fixes
 
-Date: 7 October 2026. Supplement to ReScience C submission #139; the originally submitted manuscript and its pinned experimental source remain unchanged.
+Tests: 7 October 2026. Documentation updated: 9 October 2026. Supplement to ReScience C submission #139; the originally submitted manuscript and its pinned experimental source remain unchanged.
 
 A response from the original corresponding author has been received. Statements in the initial submission saying that no response had been reported are superseded. Private correspondence is not reproduced or quoted here. The tests below concern publicly accessible source.
+
+## Author confirmation and upstream integration
+
+Adriano Meligrana confirmed the existence of the two reported implementation issues and, in correspondence dated 9 October 2026, permitted us to state that confirmation. This permission does not imply endorsement of the manuscript as a whole. The private correspondence is neither reproduced nor quoted. The public description of [upstream PR #154](https://github.com/JuliaDynamics/StreamSampling.jl/pull/154) independently records acknowledgment of @mharinat for reporting the WRAExp-J retrieval bias and the binomial-CDF off-by-one error. No credit is claimed for the other fixes.
+
+PR #154 was merged on 9 October 2026 at 01:02:32 UTC, as commit `69cc82a4a979853c6e54249dc02e75d8e701a8b8`. The merged `comparison/samplers.jl` is byte-identical to the file at the tested commit `f5eef18df8c59792e4fd5dda7aebfa1dd6780c87`; both have SHA-256 `fde8a4ef460c07035e81d1b316b4506e68193f6a7b1af07e8c0898d836d8f458`. This identity check involved no new sampling or timing experiment and does not validate other modified files or establish a new package release. The verification archive retains the original 7 October report; this living addendum records subsequent documentation updates.
 
 ## Pinned source and scope
 
